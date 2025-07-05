@@ -1,5 +1,5 @@
 // WARNING: Only use this in development!
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 require("dotenv").config();
 const express = require("express");
@@ -29,3 +29,5 @@ pool
   });
 
 app.use("/api/orders", orderRoutes);
+
+module.exports = app;
